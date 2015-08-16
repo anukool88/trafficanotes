@@ -21,7 +21,8 @@
         android:text="About Me"
         android:id="@+id/btnAboutMe"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
     <ListView
         android:layout_width="wrap_content"
