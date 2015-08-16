@@ -1,0 +1,50 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kool.trafficnotes.DetailActivity"
+     android:background="@drawable/bg7">
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/Le">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="New Text"
+             android:id="@+id/txtTitleDetail"
+             android:layout_gravity="center_horizontal"
+             android:textSize="@dimen/h1" />
+
+         <ImageView
+             android:layout_width="@dimen/image"
+             android:layout_height="@dimen/image"
+             android:id="@+id/imvTraffic"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="20dp" />
+
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/image"
+             android:id="@+id/scrollView"
+             android:layout_gravity="center_horizontal"
+             android:layout_margin="20dp"
+             android:background="#80ffffff"
+             android:padding="15dp">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="New Text"
+                 android:id="@+id/textView2"
+                 android:textSize="@dimen/h2"
+                 android:padding="15dp"
+                 android:textColor="@color/texth1" />
+         </ScrollView>
+     </LinearLayout>
+ </RelativeLayout>
