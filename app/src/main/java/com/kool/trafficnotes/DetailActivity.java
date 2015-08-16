@@ -4,13 +4,33 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
+
+    // Explicit
+
+    private TextView titleTextView, detailTextView ;
+    private ImageView trafficImageView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        //Bind Widget
+        bindWidget();
+
+    }
+
+    private void bindWidget() {
+        titleTextView = (TextView) findViewById(R.id.txtTitleDetail);
+        detailTextView = (TextView) findViewById(R.id.txtTitleDetail);
+        trafficImageView = (ImageView) findViewById(R.id.imvTraffic);
+
+
     }
 
     @Override
@@ -34,4 +54,4 @@ public class DetailActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-}
+} //Main Class

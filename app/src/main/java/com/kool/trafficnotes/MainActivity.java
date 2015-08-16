@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private void createListView() {
 
         //Setup Source of Images
-        int[] intDrawable = new int[20];
+        final int[] intDrawable = new int[20];
         intDrawable[0] = R.drawable.traffic_01;
         intDrawable[1] = R.drawable.traffic_02;
         intDrawable[2] = R.drawable.traffic_03;
@@ -83,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent objIntent = new Intent(MainActivity.this, DetailActivity.class);
 
                 objIntent.putExtra("Title", strTile[i]);
+                objIntent.putExtra("Image", intDrawable[i]);
+                objIntent.putExtra("Index", i);
 
                 startActivity(objIntent);
 
