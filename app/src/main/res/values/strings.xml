@@ -6,4 +6,5 @@
     <string name="title">ป้ายจราจร</string>
     <string name="title2">Traffic</string>
     <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
 </resources>

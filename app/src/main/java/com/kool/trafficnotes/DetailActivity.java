@@ -23,11 +23,37 @@ public class DetailActivity extends AppCompatActivity {
         //Bind Widget
         bindWidget();
 
+        // Show Title
+        showTitle();
+
+        //show Image
+        showImage();
+
+        // show detail
+        int intIndex = getIntent().getIntExtra("Index", 0);
+        showDetail(intIndex);
+    }
+
+    private void showDetail(int intIndex) {
+        String[] strMyDetail = getResources().getStringArray(R.array.details);
+        detailTextView.setText(strMyDetail[intIndex]);
+
+    }
+
+
+    private void showImage() {
+        int intMyImage = getIntent().getIntExtra("Image", R.drawable.icon_question);
+        trafficImageView.setImageResource(intMyImage);
+    }
+
+    private void showTitle() {
+        String strMyReceive = getIntent().getStringExtra("Title");
+        titleTextView.setText(strMyReceive);
     }
 
     private void bindWidget() {
         titleTextView = (TextView) findViewById(R.id.txtTitleDetail);
-        detailTextView = (TextView) findViewById(R.id.txtTitleDetail);
+        detailTextView = (TextView) findViewById(R.id.detailTextView);
         trafficImageView = (ImageView) findViewById(R.id.imvTraffic);
 
 
